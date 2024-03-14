@@ -1,10 +1,18 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link,  } from 'react-router-dom'
 import { auth } from '../database/Config'
 import { toast } from 'react-toastify'
 import { signInWithEmailAndPassword } from 'firebase/auth'
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
 const Login = () => {
+
+    useEffect(() => {
+        Aos.init({
+          duration: 2000,
+        })
+      }, [])
 
     const [email, setEmail]= useState('')
     const [password, setPassword]= useState('')
@@ -33,8 +41,8 @@ const Login = () => {
 
   return (
     <div>
-        <div className='inputContainer'>
-            <h1>Login</h1>
+        <div className='inputContainer' data-aos='flip-left'>
+            <h1 >Login</h1>
             <form onSubmit={loginuser} >
             <input id='inputstyle' type='email' placeholder='Enter your email address' onChange={(e)=>setEmail(e.target.value)} value={email} /><br/>
             <input id='inputstyle' type='password' placeholder='Enter your password' onChange={(e)=>setPassword(e.target.value)} value={password} /><br/>
