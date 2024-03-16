@@ -5,6 +5,9 @@ import 'react-toastify/dist/ReactToastify.css';
 import Register from './component/authentication/Register';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Resetpassword from './component/authentication/Resetpassword';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+
 
 
 function App() {

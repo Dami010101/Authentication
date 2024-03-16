@@ -42,7 +42,7 @@ const Login = () => {
   return (
     <div>
         <div className='inputContainer' data-aos='flip-left'>
-            <h1 >Login</h1>
+            <h1 className='authHeaderText'>Login</h1>
             <form onSubmit={loginuser} >
             <input id='inputstyle' type='email' placeholder='Enter your email address' onChange={(e)=>setEmail(e.target.value)} value={email} /><br/>
             <input id='inputstyle' type='password' placeholder='Enter your password' onChange={(e)=>setPassword(e.target.value)} value={password} /><br/>
