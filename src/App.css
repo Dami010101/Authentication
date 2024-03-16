@@ -1,5 +1,5 @@
 #inputstyle{
-  width: 90%;
+  width: 100%;
   padding: 10px;
   border-radius: 5px;
   margin: 8px 0 8px;
@@ -10,23 +10,23 @@
   color: red;
   
 }
-/* .inputContainer{
+.inputContainer{
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-} */
+}
 
-.inputContainer{
+/* .inputContainer{
   text-align: center;
   width: 50%;
   margin: auto;
   margin-top: 30px;
-}
+} */
 
 #submit{
-  width: 50%;
+  width: 100%;
   padding: 10px;
   border-radius: 5px;
   background-color: #1877F2;
