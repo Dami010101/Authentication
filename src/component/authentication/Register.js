@@ -4,7 +4,8 @@ import { Link, useNavigate } from 'react-router-dom'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 import axios from 'axios'
-const url = 'http://localhost:8002/api/user/register_user'
+// const url = 'http://localhost:8002/api/user/register_user'
+const url = 'https://auth-pw4t.onrender.com/api/user/register_user'
 
 
 

@@ -5,7 +5,8 @@ import Aos from 'aos'
 import 'aos/dist/aos.css'
 import axios from 'axios'
 import { useCookies } from 'react-cookie'
-const url = 'http://localhost:8002/api/user/login_user'
+// const url = 'http://localhost:8002/api/user/login_user'
+const url = 'https://auth-pw4t.onrender.com/api/user/login_user'
 
 
 
