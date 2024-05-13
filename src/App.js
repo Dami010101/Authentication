@@ -5,7 +5,9 @@ import 'react-toastify/dist/ReactToastify.css';
 import Register from './component/authentication/Register';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Resetpassword from './component/authentication/Resetpassword';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import Product from './pages/Product';
+export const frontEndUrl = process.env.CONNECTOR
+
 
 
 
@@ -18,6 +20,7 @@ function App() {
       <Route element={<Register/>} path='/Register'/>
       <Route element={<Login/>} path='/'/>
       <Route element={<Resetpassword/>} path='/ResetPassword'/>
+      <Route element={<Product/>} path='/Product'/>
       </Routes>
       </BrowserRouter>
       <ToastContainer/>
